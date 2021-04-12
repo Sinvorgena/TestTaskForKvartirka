@@ -1,85 +1,102 @@
-import {Api} from "../dal/api";
+import {Api} from "../Dal/api";
+import React from "react";
+import {act} from "@testing-library/react";
 
-let SET_COMPANIES_DATA = "SET_COMPANIES_DATA"
-let SET_SELECTED_COMPANY_ID = "SET_SELECTED_COMPANY_ID"
-let SET_HOUSE_DATA = "SET_HOUSE_DATA"
-let SET_CURRENT_PAGE = "SET_CURRENT_PAGE"
-
-let CompaniesDefaulState = {
-    companiesData: [],
-    houseData: [],
-    currentCompanyId: "",
-    nextPage: 0,
-    currentPage: 0,
-    lastPage: 0,
-    prevPage: 0
-
+let SET_ASTEROID_DATA = "SET_ASTEROID_DATA"
+let TOOGLE_API_IS_PENDING = "TOOGLE_API_IS_PENDING"
+let TOOGLE_STATUS_OF_LOADING_DATA = "TOOGLE_STATUS_OF_LOADING_DATA"
+let SET_EMPTY_DANGEROUS_DATA_COUNT = "SET_EMPTY_DANGEROUS_DATA_COUNT"
+let AsteroidsDefaulState = {
+    asteroidData: [],
+    dangerousAsteroidData: [],
+    maxToMinSizeSort: false,
+    requestIsPending: false,
+    statusOfLoadingData: false,
+    emptyDangerousDataCount: 0
 }
 
-export const CompaniesReducer = (state = CompaniesDefaulState, action) => {
+export const AsteroidsReducer = (state = AsteroidsDefaulState, action) => {
     let copyState;
     switch (action.type) {
-        case SET_COMPANIES_DATA:
+        case SET_ASTEROID_DATA:
             copyState = {
                 ...state,
-                companiesData: [...action.companiesData]
+                asteroidData: [...state.asteroidData, ...action.asteroidData],
+                dangerousAsteroidData: [...state.dangerousAsteroidData, ...action.dangerousAsteroidData]
             }
             return copyState
-        case SET_HOUSE_DATA:
+        case TOOGLE_API_IS_PENDING:
             copyState = {
                 ...state,
-                houseData: [...action.houseData],
-                nextPage: action.nextPage,
-                currentPage: action.currentPage,
-                lastPage: action.lastPage,
-                prevPage: action.prevPage
+                requestIsPending: action.bollean
             }
             return copyState
-        case SET_SELECTED_COMPANY_ID:
+        case TOOGLE_STATUS_OF_LOADING_DATA:
             copyState = {
                 ...state,
-                currentCompanyId: action.currentCompanyId
+                statusOfLoadingData: action.bollean
             }
             return copyState
-        case SET_CURRENT_PAGE:
+        case SET_EMPTY_DANGEROUS_DATA_COUNT:
             copyState = {
-                ...state,
-                currentPage: action.currentPage
+                ...state
             }
+            if(action.bollean) {copyState.emptyDangerousDataCount++}else{copyState.emptyDangerousDataCount--}
+
             return copyState
         default:
             return state
     }
 }
 
-export let setCompaniesDataSucsess = (companiesData) => ({
-    type: SET_COMPANIES_DATA,
-    companiesData
+export let setAsteroidDataSucsess = (asteroidData, dangerousAsteroidData, emptyDangerousDataCount) => ({
+    type: SET_ASTEROID_DATA,
+    asteroidData, dangerousAsteroidData
 })
-export let setHouseDataSucsess = (houseData, currentPage, lastPage, nextPage, prevPage) => ({
-    type: SET_HOUSE_DATA,
-    houseData, nextPage, currentPage, lastPage, prevPage
+export let toogleApiIsPending = (bollean) => ({
+    type: TOOGLE_API_IS_PENDING,
+    bollean
 })
-export let setSelectedCompanyId = (currentCompanyId) => ({
-    type: SET_SELECTED_COMPANY_ID,
-    currentCompanyId
+export let toogleStatusOfLoadingData = (bollean) => ({
+    type: TOOGLE_STATUS_OF_LOADING_DATA,
+    bollean
 })
-export let setHouseData = (company_id, page) => {
+export let setEmptyDangerousDataCount = (bollean) => ({
+    type: SET_EMPTY_DANGEROUS_DATA_COUNT,
+    bollean
+})
+export let setHouseData = (start, end, sortByDangerous) => {
     return (dispatch) => {
-        Api.houseData.getHouse(company_id, page).then(response => {
-                dispatch(setHouseDataSucsess(response.data.data, response.data.links.currentPage, response.data.links.lastPage, response.data.links.nextPage, response.data.links.prevPage))
+        dispatch(toogleApiIsPending(true))
+        Api.Asteroid.getAsteroid(start, end).then((response) => {
+            let arrayMax = []
+            for (let key in response.data.near_earth_objects) {
+                arrayMax = [...arrayMax, ...response.data.near_earth_objects[key].map(el => el)]
             }
-        )
-    }
-}
-export let metaDataHouseToNull = () => {
-    return (dispatch) => {
-        dispatch(setHouseDataSucsess([], null, null, null, null))
-        debugger
+            let dangerousAsteroidData = arrayMax.filter(el => {
+                if (el.is_potentially_hazardous_asteroid) {
+                    return el
+                }
+            })
+
+            if(window.store.getState().Asteroids.dangerousAsteroidData.length < 5){
+                dispatch(setEmptyDangerousDataCount(true))
+                dispatch(setAsteroidDataSucsess(arrayMax, dangerousAsteroidData))
+            } else {
+                dispatch(setAsteroidDataSucsess(arrayMax, dangerousAsteroidData))
+            }
+            dispatch(toogleApiIsPending(false))
+            console.log(arrayMax)
+            console.log(dangerousAsteroidData)
+            console.log(AsteroidsDefaulState.emptyDangerousDataCount)
+
+
+        })
+
     }
 }
 
 
-window.CompaniesDefaulState = CompaniesDefaulState
+window.AsteroidsDefaulState = AsteroidsDefaulState
 
 

@@ -1,0 +1,90 @@
+
+.DangerousAsteroidBakcground{
+    background: linear-gradient(to right, #FFB199, #FF0844);
+    margin: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.SaftiAsteroidBakcground{
+    background: linear-gradient(to right, #CFF37D, #7DE88C);
+    margin: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.AsteroidBox{
+    background-image: url("../Frame 2.svg");
+    background-repeat: no-repeat;
+    background-position: 15% 10%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.asteroidInfo{
+}
+.destroyedBox{
+}
+
+
+
+
+
+.imageBox{
+    position: relative;
+}
+.btnToDestroyAsteroid{
+    padding: 10px;
+    border-radius: 20px;
+    background: #186DD6;
+    color: white;
+    border: none;
+}
+.btnToDestroyAsteroid:focus{
+    outline: none;
+}
+.btnToDestroyAsteroid:active{
+    position: relative;
+    top: 3px;
+}
+.imageBox img{
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+}
+
+
+
+.testBorder{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "test1 test2 test3";
+}
+.test2{
+    top: -18%;
+    position: relative;
+    border-bottom: 1px dotted black;
+    grid-area: test2;
+}
+.test1{
+    grid-area: test1;
+}
+.test3{
+    grid-area: test3;
+}
+.toogleSortByDistanceBtn{
+}
+
+
+.toogleSortByDistanceBtn.active{
+    font-weight: 700;
+}
+.sortByDistanse{
+    display: none;
+}
+.sortByDistanseBox input ~ label{
+    text-decoration: underline;
+}
+.sortByDistanseBox input:checked ~ label{
+    font-weight: 700;
+    text-decoration: none;
+}

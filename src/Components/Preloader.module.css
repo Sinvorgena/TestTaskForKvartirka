@@ -1,0 +1,23 @@
+.PreloaderBox{
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.PreloaderBackground{
+    width: 100%;
+    position: fixed;
+    background: gray;
+    height: 100%;
+    opacity: 0.2;
+}
+.PreloaderImgBox{
+    top: 50%;
+    position: fixed;
+    left: 50%;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
