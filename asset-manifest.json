@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/TestTaskForKvartirka/static/css/main.cb5ada0a.chunk.css",
-    "main.js": "/TestTaskForKvartirka/static/js/main.bc33041e.chunk.js",
-    "main.js.map": "/TestTaskForKvartirka/static/js/main.bc33041e.chunk.js.map",
-    "runtime-main.js": "/TestTaskForKvartirka/static/js/runtime-main.4ac6918b.js",
-    "runtime-main.js.map": "/TestTaskForKvartirka/static/js/runtime-main.4ac6918b.js.map",
-    "static/js/2.d283aa70.chunk.js": "/TestTaskForKvartirka/static/js/2.d283aa70.chunk.js",
-    "static/js/2.d283aa70.chunk.js.map": "/TestTaskForKvartirka/static/js/2.d283aa70.chunk.js.map",
-    "static/js/3.e9c115f9.chunk.js": "/TestTaskForKvartirka/static/js/3.e9c115f9.chunk.js",
-    "static/js/3.e9c115f9.chunk.js.map": "/TestTaskForKvartirka/static/js/3.e9c115f9.chunk.js.map",
+    "main.css": "/TestTaskForKvartirka/static/css/main.3976725d.chunk.css",
+    "main.js": "/TestTaskForKvartirka/static/js/main.06cc233d.chunk.js",
+    "main.js.map": "/TestTaskForKvartirka/static/js/main.06cc233d.chunk.js.map",
+    "runtime-main.js": "/TestTaskForKvartirka/static/js/runtime-main.b7b92e43.js",
+    "runtime-main.js.map": "/TestTaskForKvartirka/static/js/runtime-main.b7b92e43.js.map",
+    "static/js/2.b7fac267.chunk.js": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js",
+    "static/js/2.b7fac267.chunk.js.map": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js.map",
+    "static/js/3.a9b5431a.chunk.js": "/TestTaskForKvartirka/static/js/3.a9b5431a.chunk.js",
+    "static/js/3.a9b5431a.chunk.js.map": "/TestTaskForKvartirka/static/js/3.a9b5431a.chunk.js.map",
     "index.html": "/TestTaskForKvartirka/index.html",
-    "static/css/main.cb5ada0a.chunk.css.map": "/TestTaskForKvartirka/static/css/main.cb5ada0a.chunk.css.map",
-    "static/js/2.d283aa70.chunk.js.LICENSE.txt": "/TestTaskForKvartirka/static/js/2.d283aa70.chunk.js.LICENSE.txt",
+    "static/css/main.3976725d.chunk.css.map": "/TestTaskForKvartirka/static/css/main.3976725d.chunk.css.map",
+    "static/js/2.b7fac267.chunk.js.LICENSE.txt": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js.LICENSE.txt",
     "static/media/1476.d95253fd.png": "/TestTaskForKvartirka/static/media/1476.d95253fd.png",
-    "static/media/Asteroids.module.css": "/TestTaskForKvartirka/static/media/Frame 2.3b436c0d.svg",
+    "static/media/AsteroidsBasket.module.css": "/TestTaskForKvartirka/static/media/Frame 2.3b436c0d.svg",
     "static/media/cosmos-background.4a06c329.jpg": "/TestTaskForKvartirka/static/media/cosmos-background.4a06c329.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4ac6918b.js",
-    "static/js/2.d283aa70.chunk.js",
-    "static/css/main.cb5ada0a.chunk.css",
-    "static/js/main.bc33041e.chunk.js"
+    "static/js/runtime-main.b7b92e43.js",
+    "static/js/2.b7fac267.chunk.js",
+    "static/css/main.3976725d.chunk.css",
+    "static/js/main.06cc233d.chunk.js"
   ]
 }
