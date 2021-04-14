@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/TestTaskForKvartirka/static/css/main.3976725d.chunk.css",
-    "main.js": "/TestTaskForKvartirka/static/js/main.06cc233d.chunk.js",
-    "main.js.map": "/TestTaskForKvartirka/static/js/main.06cc233d.chunk.js.map",
-    "runtime-main.js": "/TestTaskForKvartirka/static/js/runtime-main.b7b92e43.js",
-    "runtime-main.js.map": "/TestTaskForKvartirka/static/js/runtime-main.b7b92e43.js.map",
-    "static/js/2.b7fac267.chunk.js": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js",
-    "static/js/2.b7fac267.chunk.js.map": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js.map",
-    "static/js/3.a9b5431a.chunk.js": "/TestTaskForKvartirka/static/js/3.a9b5431a.chunk.js",
-    "static/js/3.a9b5431a.chunk.js.map": "/TestTaskForKvartirka/static/js/3.a9b5431a.chunk.js.map",
-    "index.html": "/TestTaskForKvartirka/index.html",
-    "static/css/main.3976725d.chunk.css.map": "/TestTaskForKvartirka/static/css/main.3976725d.chunk.css.map",
-    "static/js/2.b7fac267.chunk.js.LICENSE.txt": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js.LICENSE.txt",
-    "static/media/1476.d95253fd.png": "/TestTaskForKvartirka/static/media/1476.d95253fd.png",
-    "static/media/AsteroidsBasket.module.css": "/TestTaskForKvartirka/static/media/Frame 2.3b436c0d.svg",
-    "static/media/cosmos-background.4a06c329.jpg": "/TestTaskForKvartirka/static/media/cosmos-background.4a06c329.jpg"
+    "main.css": "/Asteroids/static/css/main.4df9a7a8.chunk.css",
+    "main.js": "/Asteroids/static/js/main.75ef0509.chunk.js",
+    "main.js.map": "/Asteroids/static/js/main.75ef0509.chunk.js.map",
+    "runtime-main.js": "/Asteroids/static/js/runtime-main.aad7bce1.js",
+    "runtime-main.js.map": "/Asteroids/static/js/runtime-main.aad7bce1.js.map",
+    "static/js/2.b7fac267.chunk.js": "/Asteroids/static/js/2.b7fac267.chunk.js",
+    "static/js/2.b7fac267.chunk.js.map": "/Asteroids/static/js/2.b7fac267.chunk.js.map",
+    "static/js/3.a9b5431a.chunk.js": "/Asteroids/static/js/3.a9b5431a.chunk.js",
+    "static/js/3.a9b5431a.chunk.js.map": "/Asteroids/static/js/3.a9b5431a.chunk.js.map",
+    "index.html": "/Asteroids/index.html",
+    "static/css/main.4df9a7a8.chunk.css.map": "/Asteroids/static/css/main.4df9a7a8.chunk.css.map",
+    "static/js/2.b7fac267.chunk.js.LICENSE.txt": "/Asteroids/static/js/2.b7fac267.chunk.js.LICENSE.txt",
+    "static/media/1476.d95253fd.png": "/Asteroids/static/media/1476.d95253fd.png",
+    "static/media/AsteroidsBasket.module.css": "/Asteroids/static/media/Frame 2.3b436c0d.svg",
+    "static/media/cosmos-background.4a06c329.jpg": "/Asteroids/static/media/cosmos-background.4a06c329.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b7b92e43.js",
+    "static/js/runtime-main.aad7bce1.js",
     "static/js/2.b7fac267.chunk.js",
-    "static/css/main.3976725d.chunk.css",
-    "static/js/main.06cc233d.chunk.js"
+    "static/css/main.4df9a7a8.chunk.css",
+    "static/js/main.75ef0509.chunk.js"
   ]
 }
