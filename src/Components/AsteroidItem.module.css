@@ -1,0 +1,149 @@
+
+.AsteroidBackgroud{
+    margin: 10px 0 120px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-height: 80vh;
+    padding: 0 0 5px 0;
+
+}
+.DangerousAsteroidBakcground{
+    background: linear-gradient(to right, #FFB199, #FF0844);
+}
+.SaftiAsteroidBakcground{
+    background: linear-gradient(to right, #CFF37D, #7DE88C);
+}
+ul{
+    list-style: none;
+}
+ul li{
+    text-align: left;
+}
+
+.AsteroidBox{
+    grid-gap: 10px;
+    background-image: url("../Frame 2.svg");
+    background-repeat: no-repeat;
+    background-position: 15% 10%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 10% 1fr auto;
+}
+.imageBox{
+    position: relative;
+}
+.btnToDestroyAsteroid{
+    padding: 10px;
+    border-radius: 20px;
+    background: #186DD6;
+    color: white;
+    border: none;
+}
+.btnToDestroyAsteroidSelecter{
+    padding: 10px;
+    border-radius: 20px;
+    background: white;
+    color: #186DD6;
+    transition: all 0.3s;
+    border: 2px solid #186DD6;
+}
+.btnToDestroyAsteroid:focus,
+.btnToDestroyAsteroidSelecter:focus{
+    outline: none;
+}
+.btnToDestroyAsteroid:active,
+.btnToDestroyAsteroidSelecter:active{
+    position: relative;
+    top: 3px;
+}
+.btnToDestroyAsteroidSelecter::after{
+    position: absolute;
+}
+.btnToDestroyAsteroidSelecter:hover{
+
+}
+.imageBox img{
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+.name{
+    font-size: 20px;
+}
+.testBorder{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "test1 test2 test3";
+}
+.test2{
+    top: -18%;
+    position: relative;
+    border-bottom: 1px dotted black;
+    grid-area: test2;
+}
+.test1{
+    grid-area: test1;
+}
+.test3{
+    grid-area: test3;
+}
+
+.Border{
+    grid-template-columns: auto 1fr 3fr;
+    grid-template-areas: "mainProperty1 mainProperty2 mainProperty3";
+}
+.mainProperty2{
+    top: -99.2%;
+    position: relative;
+    grid-area: mainProperty2;
+}
+.mainProperty1{
+    grid-area: mainProperty1;
+}
+.mainProperty3{
+    grid-area: mainProperty3;
+
+}
+.mainProperty3 ul{
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+@media (max-width: 550px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .AsteroidBox{
+        grid-template-rows: 70px 1fr 100px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "img"
+                                "info"
+                                "btn";
+        grid-gap: 0px;
+        background-position: 2% 3%;
+        position: relative;
+    }
+    .imageBox{
+        position: absolute;
+        grid-area: img;
+        bottom: 40%;
+        left: 82%;
+        transform: rotate3d(0, 40, 0, 180deg) scale(0.6);
+    }
+    .asteroidInfo{
+        background: white;
+        grid-area: info;
+        padding: 0 10px;
+    }
+    .destroyedBox{
+        background: white;
+        grid-area: btn;
+        border-radius: 0 0 10px 10px;
+    }
+
+}
