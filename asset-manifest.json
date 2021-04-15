@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/TestTaskForKvartirka/static/css/main.774b3398.chunk.css",
-    "main.js": "/TestTaskForKvartirka/static/js/main.75ef0509.chunk.js",
-    "main.js.map": "/TestTaskForKvartirka/static/js/main.75ef0509.chunk.js.map",
+    "main.css": "/TestTaskForKvartirka/static/css/main.ff4456ca.chunk.css",
+    "main.js": "/TestTaskForKvartirka/static/js/main.b3fa8274.chunk.js",
+    "main.js.map": "/TestTaskForKvartirka/static/js/main.b3fa8274.chunk.js.map",
     "runtime-main.js": "/TestTaskForKvartirka/static/js/runtime-main.b7b92e43.js",
     "runtime-main.js.map": "/TestTaskForKvartirka/static/js/runtime-main.b7b92e43.js.map",
     "static/js/2.b7fac267.chunk.js": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.a9b5431a.chunk.js": "/TestTaskForKvartirka/static/js/3.a9b5431a.chunk.js",
     "static/js/3.a9b5431a.chunk.js.map": "/TestTaskForKvartirka/static/js/3.a9b5431a.chunk.js.map",
     "index.html": "/TestTaskForKvartirka/index.html",
-    "static/css/main.774b3398.chunk.css.map": "/TestTaskForKvartirka/static/css/main.774b3398.chunk.css.map",
+    "static/css/main.ff4456ca.chunk.css.map": "/TestTaskForKvartirka/static/css/main.ff4456ca.chunk.css.map",
     "static/js/2.b7fac267.chunk.js.LICENSE.txt": "/TestTaskForKvartirka/static/js/2.b7fac267.chunk.js.LICENSE.txt",
     "static/media/1476.d95253fd.png": "/TestTaskForKvartirka/static/media/1476.d95253fd.png",
     "static/media/AsteroidsBasket.module.css": "/TestTaskForKvartirka/static/media/Frame 2.3b436c0d.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.b7b92e43.js",
     "static/js/2.b7fac267.chunk.js",
-    "static/css/main.774b3398.chunk.css",
-    "static/js/main.75ef0509.chunk.js"
+    "static/css/main.ff4456ca.chunk.css",
+    "static/js/main.b3fa8274.chunk.js"
   ]
 }
